@@ -1,0 +1,148 @@
+html{
+    height:100%;
+    background-image: linear-gradient(300deg,#E9F1F9,white);
+
+}
+#Box{
+    /*how to set the div to the center*/
+    height:420px;
+    width:600px;
+    background-color:#D4E8AF;
+    margin:70px auto;
+   
+    padding:20px 30px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 5px #B3DBA3 ;
+    position:relative;
+
+}
+#box1{
+    background-color: #AFBAE8;
+    padding:20px 10px;
+    position:absolute;
+    left:550px;
+    border-radius:3%;
+    box-shadow: 1px 1px 1px 1px #8DA7C3;
+    font-family: cursive;
+  
+}
+#box2{
+    width:550px;
+    height: 125px;
+    background-image:linear-gradient(360deg,#8EC2F5, #AFCCE8);
+    top:85px;
+    margin:70px auto 10px auto; 
+    border-width:2px;
+    border-style:unset;
+    border-color: wheat;
+    font-size: 100px;
+    text-align:center;
+    font-family: cursive;
+    
+}
+#box3{
+    width:550px;
+    height: 50px;
+    background-color: #C2ABEC;
+    margin:10px auto;
+    font-size:30px;
+    text-align: center;
+    font-family: cursive;
+}
+#correct-box{
+    padding:20px 10px;
+    background-color: #AFBAE8;
+    position:absolute;
+    left:275px;
+    font-family: cursive;
+    display:none;
+
+}
+#wrong-box{
+    padding:20px 10px;
+    background-color: #AFBAE8;
+    position:absolute;
+    left:275px;
+    display:none;
+    font-family: cursive;
+}
+#choice-box{
+    height:100px;
+    width:550px;
+    margin:10px auto;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+
+}
+#choice-box > div{
+    height:30px;
+    width:30px;
+    padding:35px 35px 35px 35px;
+    font-size: 30px;
+    text-align: center;
+    background-color:white;
+    border-radius: 3px;
+    box-shadow: 0px 3px 0px grey ;
+    position:relative;
+    transition:all 0.2s;
+    -moz-transition:all 0.2s;
+    -webkit-transition:all 0.2s;
+}
+
+#choice-box > div:hover, #start-box:hover{
+    background-color: #AFBAE8;
+}
+#choice-box >div:active, #start-box:active{
+    top:4px;
+    box-shadow: 0px 0px 0px grey ;
+
+}
+
+#start-box{
+    background-color:#C2ABEC;
+    height:30px;
+    width:150px;
+    margin:10px auto;;
+    text-align: center;
+    font-family:cursive;
+    border-radius: 2px;
+    box-shadow:0px 1px 0px grey;
+    position:relative;
+}
+#timeRemaining{
+    background-color: wheat;
+    box-shadow:0px 1px 0px grey;
+    height:30px;
+    width:170px;
+    font-family: cursive;
+    position:absolute;
+    left: 450px;
+    bottom: 35px;
+    visibility: hidden;
+    /*visibility:hidden- It is not visible but gets up it’s original space whereas, display:none- It is hidden and takes no space.*/
+
+}
+#GameOver{
+    height:300px;
+    width:600px;
+    color:white;
+    background-image:linear-gradient(rgb(236, 137, 61),rgb(236, 215, 25));
+    position:fixed;
+    top:150px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 60px;
+    z-index:2;
+    display:none;
+
+
+}
+
+
+
+
+
+
+
+
